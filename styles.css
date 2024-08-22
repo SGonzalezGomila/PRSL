@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, rgb(17, 24, 39), rgb(75, 85, 99));
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos toda la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+}
+span{
+    color: #d07209;
+}
+
+/*NavBar*/
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    padding: 15px 20px;
+}
+
+.navbar .logo {
+    margin-right: 20px; /* Espacio entre el logo y el menú */
+}
+
+.navbar .logo img {
+    height: 50px;
+    width: auto;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    white-space: nowrap; /* Evita saltos de línea en los elementos */
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: orange;
+}
+
+.navbar ul .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 200px; /* Ancho mínimo para evitar saltos de línea */
+}
+
+.navbar ul li:hover .dropdown {
+    display: block;
+}
+
+.navbar ul .dropdown li {
+    margin: 5px 0;
+}
+
+.navbar ul .dropdown li a {
+    color: white;
+}
+
+.navbar ul .dropdown li a:hover {
+    color: orange;
+}
+
+/*index*/
+.presentation{
+    color: white;    
+}
+.presentation h1{
+    justify-content: center;
+}
+
+/* Submenú dentro de Logística Industrial */
+.navbar ul .dropdown .dropdown-submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 200px;
+}
+
+.navbar ul .dropdown li:hover .dropdown-submenu {
+    display: block;
+}
+
+.navbar ul .dropdown .dropdown-submenu li {
+    margin: 5px 0;
+}
+
+.navbar ul .dropdown .dropdown-submenu li a {
+    color: white;
+}
+
+.navbar ul .dropdown .dropdown-submenu li a:hover {
+    color: orange;
+}
+
+
+
+/*Footer*/
+
+/* Contenedor principal para empujar el footer hacia abajo */
+.content {
+    flex: 1; /* Hace que este div ocupe todo el espacio disponible entre la navbar y el footer */
+    padding: 20px; /* Opcional: Agrega un poco de padding al contenido */
+}
+
+/* Footer */
+.footer {
+    background-color: #d07209;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: bold;
+    margin-top: auto; /* Asegura que el footer esté al final de la página */
+}
+
+.footer p {
+    margin: 0;
+}
