@@ -11,6 +11,10 @@ body {
     flex-direction: column;
 
 }
+/*animaciones*/
+.animate__fadeIn {
+    animation-duration: 5s; /* Cambia la duración a 2 segundos */
+}
 
 span{
     color: #d07209;
@@ -27,11 +31,11 @@ span{
 }
 
 .navbar .logo {
-    margin-right: 20px; /* Espacio entre el logo y el menú */
+    margin-right: 50px; /* Espacio entre el logo y el menú */
 }
 
 .navbar .logo img {
-    height: 50px;
+    height: 100px;
     width: auto;
 }
 
@@ -87,13 +91,7 @@ span{
     color: orange;
 }
 
-/*index*/
-.presentation{
-    color: white;    
-}
-.presentation h1{
-    justify-content: center;
-}
+
 
 /* Submenú dentro de Logística Industrial */
 .navbar ul .dropdown .dropdown-submenu {
@@ -127,6 +125,13 @@ span{
 
 
 /*Contenido*/
+/*index*/
+.presentation{
+    color: white;    
+}
+.presentation h1{
+    justify-content: center;
+}
 .content .presentation .presentation-texto h1{
     text-align: center;
     color:#d07209
@@ -135,16 +140,23 @@ span{
 
 .content .presentation .presentation-texto p{
     justify-content: center;
-    font-size: 30px;
+    
     text-align: center;
 }
 
 
 .content .presentation .presentation-texto p{
     justify-content: center;
-    font-size: 25px;
-    text-align: center;
+    font-size: 15px;
+    text-align: left;
+
 }
+.presentation-texto p {
+    max-width: 60%; /* Ajusta este valor según tus necesidades */
+    margin: 0 auto; /* Centra el párrafo dentro del contenedor */
+    letter-spacing: 2px;
+}
+
 
 
 /* Estilo general para centrar el contenido */
@@ -207,3 +219,58 @@ span{
 .footer p {
     margin: 0;
 }
+
+
+
+
+/*PRODUCTOS INDUSTRIALES*/
+.titulo-de-seccion {
+    text-align: center; /* Centra el texto horizontalmente */
+    color: #d07209; /* Cambia el color del texto a naranja */
+  }
+  
+.product-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .product-card {
+    position: relative;
+    width: 45%;
+    margin: 10px;
+    background-color: #34495e;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    color: white;
+  }
+  
+  .product-info h2{
+    color: #d07209;
+  }
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-image {
+    width: 100%;
+    border-bottom: 2px solid #e67e22;
+  }
+  
+  .product-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .product-card:hover .product-info {
+    opacity: 1;
+  }
