@@ -1,14 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     background: linear-gradient(to right, rgb(17, 24, 39), rgb(75, 85, 99));
     min-height: 100vh; /* Asegura que el cuerpo ocupe al menos toda la altura de la ventana */
     display: flex;
     flex-direction: column;
+
 }
+
 span{
     color: #d07209;
+    font-weight: bold;
 }
 
 /*NavBar*/
@@ -43,7 +49,7 @@ span{
 
 .navbar ul li a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
     white-space: nowrap; /* Evita saltos de línea en los elementos */
     transition: color 0.3s ease;
@@ -58,11 +64,12 @@ span{
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.9);
     padding: 10px;
     border-radius: 5px;
     min-width: 200px; /* Ancho mínimo para evitar saltos de línea */
 }
+
 
 .navbar ul li:hover .dropdown {
     display: block;
@@ -118,6 +125,61 @@ span{
 
 
 
+
+/*Contenido*/
+.content .presentation .presentation-texto h1{
+    text-align: center;
+    color:#d07209
+    
+}
+
+.content .presentation .presentation-texto p{
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.content .presentation .presentation-texto p{
+    justify-content: center;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+/* Estilo general para centrar el contenido */
+.presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    text-align: center; /* Asegura que el texto también esté centrado */
+}
+
+/* Estilo para centrar el botón */
+.presentation-boton {
+    margin-top: 20px; /* Espacio superior opcional */
+}
+
+.presentation-boton button {
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.presentation-boton button:hover {
+    background-color: darkorange;
+}
+
+.presentation-boton a {
+    text-decoration: none;
+    color: white;
+}
+
 /*Footer*/
 
 /* Contenedor principal para empujar el footer hacia abajo */
@@ -135,7 +197,12 @@ span{
     width: 100%;
     font-weight: bold;
     margin-top: auto; /* Asegura que el footer esté al final de la página */
+    
+    
+    
 }
+
+
 
 .footer p {
     margin: 0;
