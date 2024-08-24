@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - PERSOL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar ">
+        <div class="logo">
+            <a href="../../index.html"><img src="../Assets/img/logos/logoPNG.png" alt="Logo"></a>
+        </div>
+        <ul>
+            <li><a href="../../index.html">Empresa</a></li>
+            <li><a href="#">Productos</a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="../pages/logistica-industrial.html">Logística Industrial</a>
+                        <ul class="dropdown-submenu">
+                            <li><a href="#">Carros Logísticos</a></li>
+                            <li><a href="#">Rampa Móvil</a></li>
+                            <li><a href="#">Inverter</a></li>
+                            <li><a href="#">Stackers</a></li>
+                            <li><a href="#">Soporte Paleter</a></li>
+                            <li><a href="#">Rampines</a></li>
+                            <li><a href="#">Grampas Parrot</a></li>
+                            <li><a href="#">Plataforma Modular</a></li>
+                            <li><a href="#">Plataforma TEU</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Logística Portuaria</a></li>
+                    <li><a href="#">Estación de Trabajo en Altura</a></li>
+                </ul>
+            </li>
+            <li><a href="./root/pages/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de contacto -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form action="mailto:saggomila@gmail.com" method="POST" enctype="text/plain">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10}">
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="consulta">Consulta:</label>
+                    <textarea id="consulta" name="consulta" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+        
+
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
