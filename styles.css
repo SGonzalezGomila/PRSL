@@ -5,12 +5,28 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
-    background: linear-gradient(to right, rgb(17, 24, 39), rgb(75, 85, 99));
+    
     min-height: 100vh; /* Asegura que el cuerpo ocupe al menos toda la altura de la ventana */
     display: flex;
     flex-direction: column;
 
 }
+/* Aplica el fondo solo a la página con la clase .home */
+body.home {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),url('./root/Assets/img/fondo/20180509_104416.jpg') no-repeat;
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos toda la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* Resto del CSS */
+
 /*animaciones*/
 .animate__fadeIn {
     animation-duration: 5s; /* Cambia la duración a 2 segundos */
@@ -168,20 +184,66 @@ span{
 }
 
 /* Estilo para centrar el botón */
-.presentation-boton {
-    margin-top: 20px; /* Espacio superior opcional */
+/* Estilo para el contenedor del botón */
+.boton-contacto {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.presentation-boton button {
-    padding: 10px 20px;
-    background-color: orange;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+/* Estilo para el botón */
+/* Añadir separación entre el texto y el botón */
+.presentation-texto {
+    margin-bottom: 20px; /* Ajusta el valor según el espacio que necesites */
 }
+
+/* Estilo para el contenedor del botón */
+.boton-contacto {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para el botón */
+.boton-contacto button {
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 1px solid #FFA500; /* Cambiar borde a naranja */
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: none;
+    font-weight: normal;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+/* Estilo para el enlace dentro del botón */
+.boton-contacto button a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Flecha dentro del botón */
+.boton-contacto button a::before {
+    content: '\2192'; /* Unicode para la flecha */
+    margin-right: 10px;
+}
+
+/* Estilo al pasar el mouse */
+.boton-contacto button:hover {
+    background-color: #FFA500; /* Cambiar fondo a naranja en hover */
+    color: #000000;
+}
+
+.boton-contacto button:hover a {
+    color: #000000;
+}
+
+
 
 .presentation-boton button:hover {
     background-color: darkorange;
@@ -224,19 +286,23 @@ span{
 
 
 /*PRODUCTOS INDUSTRIALES*/
-.titulo-de-seccion {
+/* Estilos específicos para la página de productos industriales */
+body.logisticaindustrial{
+    background: linear-gradient(rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
+}
+body.logisticaindustrial .titulo-de-seccion {
     text-align: center; /* Centra el texto horizontalmente */
     color: #d07209; /* Cambia el color del texto a naranja */
-  }
-  
-  .product-carousel {
+}
+
+body.logisticaindustrial .product-carousel {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
-  }
-  
-  .product-card {
+}
+
+body.logisticaindustrial .product-card {
     position: relative;
     width: 40%; /* Reduce el ancho de la card para achicarla */
     margin: 10px;
@@ -245,26 +311,25 @@ span{
     border-radius: 10px;
     transition: transform 0.3s ease;
     color: white;
-  }
-  
-  .product-info h2 {
+}
+
+body.logisticaindustrial .product-info h2 {
     color: #d07209;
     font-weight: bold;
-    
-  }
-  
-  .product-card:hover {
+}
+
+body.logisticaindustrial .product-card:hover {
     transform: scale(1.05);
-  }
-  
-  .product-image {
+}
+
+body.logisticaindustrial .product-image {
     width: 100%;
     height: 450px; /* Ajusta la altura de la imagen */
     object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor */
     border-bottom: 2px solid #e67e22;
-  }
-  
-  .product-info {
+}
+
+body.logisticaindustrial .product-info {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -275,74 +340,68 @@ span{
     opacity: 0;
     transition: opacity 0.3s ease;
     font-size: 12px;
-  }
-  
-  .product-card:hover .product-info {
+}
+
+body.logisticaindustrial .product-card:hover .product-info {
     opacity: 1;
-  }
-  
+}
+
 
 /*Contactos*/
 /* Sección de contacto */
 /* Sección de contacto */
-.contact-section {
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    min-height: 100vh; /* Asegura que la sección ocupe toda la altura de la ventana */
-   
-    color: white;
-    padding: 20px;
+body.contacto{
+    background: linear-gradient(rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0))
+ }
+/* Estilos específicos para la página de contacto */
+body.contacto .contact-section {
+    padding: 40px 20px;
+  
 }
 
-.contact-section .container {
-    width: 100%;
-    max-width: 300px; /* Limita el ancho del contenedor para un tamaño compacto */
-    padding: 20px;
-    border-radius: 10px;
+body.contacto .container {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.contact-section h2 {
-    text-align: center; /* Alinea el título al centro */
-    margin-bottom: 15px;
-    color: #d07209;
+body.contacto h2 {
+    text-align: center;
+    color: #d07209; /* Color naranja para el título */
+    margin-bottom: 20px;
 }
 
-.form-group {
-    margin-bottom: 15px;
+body.contacto .form-group {
+    margin-bottom: 20px;
 }
 
-.form-group label {
+body.contacto label {
     display: block;
     margin-bottom: 5px;
+    color: #34495e; /* Color oscuro para las etiquetas */
     font-weight: bold;
 }
 
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ddd;
+body.contacto input,
+body.contacto textarea {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: #d07209;
-}
-
-button[type="submit"] {
-    padding: 8px 16px;
-    background-color: orange;
+body.contacto button[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    background-color: #d07209; /* Botón naranja */
     color: white;
     border: none;
     border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
-    font-size: 14px;
     transition: background-color 0.3s ease;
 }
 
-button[type="submit"]:hover {
-    background-color: darkorange;
+body.contacto button[type="submit"]:hover {
+    background-color: #e67e22; /* Color más oscuro al pasar el mouse */
 }
