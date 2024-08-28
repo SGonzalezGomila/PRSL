@@ -35,7 +35,9 @@ span{
     justify-content: space-between; /* Distribuye espacio entre logo y el menú */
     align-items: center; /* Centra verticalmente los elementos */
     background: linear-gradient(to right, rgba(12, 14, 15, 0.5), rgba(208, 114, 9, 0.5));
+    height: 150px;
     padding: 15px 20px;
+
 }
 
 .navbar .logo {
@@ -278,7 +280,7 @@ span{
     padding: 15px 0;
     width: 100%;
     height: 5%;
-    font-weight: bold;
+    
     margin-top: auto; /* Asegura que el footer esté al final de la página */
     
     
