@@ -5,22 +5,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
-    
+    background:  linear-gradient(rgba(5,7,9,0.75), rgba(5,7,9,0.75)), url('./root/Assets/img/fondo/bg.png');
     min-height: 100vh; /* Asegura que el cuerpo ocupe al menos toda la altura de la ventana */
     display: flex;
     flex-direction: column;
 
 }
-/* Aplica el fondo solo a la página con la clase .home */
-body.home {
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;
-    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),url('./root/Assets/img/fondo/20180509_104416.jpg') no-repeat;
-    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos toda la altura de la ventana */
-    display: flex;
-    flex-direction: column;
-}
+
 
 
 
@@ -38,18 +29,20 @@ span{
 }
 
 /*NavBar*/
+/* NavBar */
 .navbar {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    background:  linear-gradient(to right, rgba(12, 14, 15, 0.5), rgba(208, 114, 9, 0.5));
+
+
     padding: 15px 20px;
 }
 
 .navbar .logo {
-    margin-right: 50px; /* Espacio entre el logo y el menú */
+    margin-right: 50px; /* Ajusta este valor para el espaciado deseado */
 }
-
 .navbar .logo img {
     height: 100px;
     width: auto;
@@ -57,7 +50,7 @@ span{
 
 .navbar ul {
     list-style: none;
-    margin: 0;
+    margin: 0 auto; /* Centra horizontalmente el menú */
     padding: 0;
     display: flex;
 }
@@ -73,6 +66,7 @@ span{
     font-weight: bold;
     white-space: nowrap; /* Evita saltos de línea en los elementos */
     transition: color 0.3s ease;
+    font-size: 20px;
 }
 
 .navbar ul li a:hover {
@@ -86,10 +80,10 @@ span{
     left: 0;
     background-color: black;
     padding: 10px;
+    z-index: 1;
     border-radius: 5px;
     min-width: 200px; /* Ancho mínimo para evitar saltos de línea */
 }
-
 
 .navbar ul li:hover .dropdown {
     display: block;
@@ -107,6 +101,33 @@ span{
     color: orange;
 }
 
+/* Submenú dentro de Logística Industrial */
+.navbar ul .dropdown .dropdown-submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 200px;
+}
+
+.navbar ul .dropdown li:hover .dropdown-submenu {
+    display: block;
+}
+
+.navbar ul .dropdown .dropdown-submenu li {
+    margin: 5px 0;
+}
+
+.navbar ul .dropdown .dropdown-submenu li a {
+    color: white;
+}
+
+.navbar ul .dropdown .dropdown-submenu li a:hover {
+    color: orange;
+}
 
 
 /* Submenú dentro de Logística Industrial */
@@ -115,7 +136,7 @@ span{
     position: absolute;
     top: 0;
     left: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: black;
     padding: 10px;
     border-radius: 5px;
     min-width: 200px;
@@ -153,11 +174,15 @@ span{
     color:#d07209
     
 }
+.presentation-text{
+    text-align: justify;
+    
+}
 
 .content .presentation .presentation-texto p{
     justify-content: center;
+    text-align: justify;
     
-    text-align: center;
 }
 
 
@@ -259,16 +284,17 @@ span{
 /* Contenedor principal para empujar el footer hacia abajo */
 .content {
     flex: 1; /* Hace que este div ocupe todo el espacio disponible entre la navbar y el footer */
-    padding: 20px; /* Opcional: Agrega un poco de padding al contenido */
+    padding: 5px; /* Opcional: Agrega un poco de padding al contenido */
 }
 
 /* Footer */
 .footer {
-    background-color: #d07209;
+    background-color: transparent;
     color: white;
     text-align: center;
     padding: 15px 0;
     width: 100%;
+    height: 5%;
     font-weight: bold;
     margin-top: auto; /* Asegura que el footer esté al final de la página */
     
@@ -286,87 +312,168 @@ span{
 
 
 /*PRODUCTOS INDUSTRIALES*/
-/* Estilos específicos para la página de productos industriales */
-body.logisticaindustrial{
-    background: linear-gradient(rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
-}
-body.logisticaindustrial .titulo-de-seccion {
+
+body.logistica-industrial .titulo-de-seccion {
     text-align: center; /* Centra el texto horizontalmente */
     color: #d07209; /* Cambia el color del texto a naranja */
+    font-size: 2.5rem; /* Ajusta el tamaño del texto para hacerlo más prominente */
+    margin-top: 20px;
 }
 
-body.logisticaindustrial .product-carousel {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
+body.logistica-industrial .carousel-image-wrapper {
+    position: relative; /* Asegura que el overlay y el texto se posicionen correctamente */
 }
 
-body.logisticaindustrial .product-card {
-    position: relative;
-    width: 40%; /* Reduce el ancho de la card para achicarla */
-    margin: 10px;
-    background-color: #34495e;
-    overflow: hidden;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+body.logistica-industrial .image-overlay {
+    background: rgba(5, 7, 9, 0.5); /* Color semitransparente */
+    position: absolute; /* Posiciona el overlay sobre la imagen */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; /* Asegura que el overlay esté por encima de la imagen */
+}
+
+body.logistica-industrial .carousel-caption {
+    z-index: 2; /* Asegura que el texto esté por encima del overlay */
+    position: absolute; /* Permite el uso de z-index correctamente */
+    top: 50%; /* Posiciona el texto verticalmente en el medio */
+    left: 50%; /* Posiciona el texto horizontalmente en el medio */
+    transform: translate(-50%, -50%); /* Centra el texto perfectamente */
+    width: 80%;
+    
+}
+.texto-informacion{
     color: white;
+    width: 70%;
+    height: 50%;
+    text-align: justify;
+    margin-bottom: 30%;
 }
 
-body.logisticaindustrial .product-info h2 {
-    color: #d07209;
+/* Asegúrate de que el contenedor del texto tenga el mismo ancho que el carrusel */
+.texto-informacion {
+    width: 100%;
+    padding: 0 15px; /* Ajusta el padding según sea necesario */
+    box-sizing: border-box; /* Asegúrate de que el padding no afecte el ancho total */
+}
+
+/* Opcional: Agrega estilos para ajustar el tamaño del texto */
+.texto-informacion p {
+    font-size: 1rem; /* Ajusta el tamaño del texto según sea necesario */
+    line-height: 1.6; /* Mejora la legibilidad del texto */
+}
+
+.titulo-de-seccion{
     font-weight: bold;
 }
 
-body.logisticaindustrial .product-card:hover {
-    transform: scale(1.05);
-}
-
-body.logisticaindustrial .product-image {
-    width: 100%;
-    height: 450px; /* Ajusta la altura de la imagen */
-    object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor */
-    border-bottom: 2px solid #e67e22;
-}
-
-body.logisticaindustrial .product-info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 15px;
+/*Rampa movil*/
+.clientes h2{
+    color: #d07209;
+    font-weight: bold;
     text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    font-size: 12px;
+    margin-top: 50px;
+    
+}
+.client-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre los grupos de clientes */
+    justify-content: center; /* Centra los grupos de clientes horizontalmente */
+    margin-top: 5%;
+    margin-left: 17%;
 }
 
-body.logisticaindustrial .product-card:hover .product-info {
-    opacity: 1;
+.client-group {
+    flex: 1 1 calc(33.333% - 20px); /* Tres clientes por fila con un espacio a la derecha */
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+    
 }
+
+
+.client-group ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.client-group li {
+    margin-bottom: 10px;
+}
+
+.client-group li:hover{
+    color: #d07209;
+}
+
+
+.client-list ul {
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+
+
 
 
 /*Contactos*/
-/* Sección de contacto */
-/* Sección de contacto */
-body.contacto{
-    background: linear-gradient(rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0))
- }
-/* Estilos específicos para la página de contacto */
+
 body.contacto .contact-section {
     padding: 40px 20px;
-  
 }
 
 body.contacto .container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+body.contacto .form-map-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+body.contacto .map-container {
+    flex: 1;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+body.contacto .map-container iframe {
+    margin-bottom: 10px;
+    margin-top: 20%;
+}
+
+body.contacto .facebook {
+    text-align: center;
+}
+
+body.contacto .facebook img {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    margin-right: 30%;
+    transition: transform 0.3s ease; /* Añade una transición suave */
+}
+
+body.contacto .facebook img:hover {
+    transform: scale(1.2); /* Agranda la imagen al 120% de su tamaño original */
+}
+
+
+body.contacto .contact-form {
+    flex: 2;
+    max-width: 600px;
+    width: 100%;
 }
 
 body.contacto h2 {
     text-align: center;
-    color: #d07209; /* Color naranja para el título */
+    color: #d07209;
     margin-bottom: 20px;
 }
 
@@ -377,31 +484,34 @@ body.contacto .form-group {
 body.contacto label {
     display: block;
     margin-bottom: 5px;
-    color: #34495e; /* Color oscuro para las etiquetas */
+    color: #d07209;
     font-weight: bold;
 }
 
 body.contacto input,
 body.contacto textarea {
-    width: 50%;
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
+    margin: 0 auto;
 }
 
 body.contacto button[type="submit"] {
-    width: 50%;
+    width: 100%;
     padding: 10px;
-    background-color: #d07209; /* Botón naranja */
+    background-color: orange;
     color: white;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin: 0 auto;
 }
 
 body.contacto button[type="submit"]:hover {
-    background-color: #e67e22; /* Color más oscuro al pasar el mouse */
+    background-color: #e67e22;
 }
+
