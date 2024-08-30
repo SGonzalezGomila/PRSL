@@ -5,14 +5,17 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
-    background:  linear-gradient(rgba(5,7,9,0.75), rgba(5,7,9,0.75)), url('./root/Assets/img/fondo/bg.png');
-    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos toda la altura de la ventana */
+    background: linear-gradient(rgba(5, 7, 9, 0.75), rgba(5, 7, 9, 0.75)), url('./root/Assets/img/fondo/bg.png');
+    min-height: 100vh;
+    /* Asegura que el cuerpo ocupe al menos toda la altura de la ventana */
     display: flex;
     flex-direction: column;
 
 }
 
-
+strong{
+    color: #d07209;
+}
 
 
 
@@ -20,10 +23,11 @@ body {
 
 /*animaciones*/
 .animate__fadeIn {
-    animation-duration: 5s; /* Cambia la duración a 2 segundos */
+    animation-duration: 5s;
+    /* Cambia la duración a 2 segundos */
 }
 
-span{
+span {
     color: #d07209;
     font-weight: bold;
 }
@@ -32,8 +36,10 @@ span{
 /* NavBar */
 .navbar {
     display: flex;
-    justify-content: space-between; /* Distribuye espacio entre logo y el menú */
-    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between;
+    /* Distribuye espacio entre logo y el menú */
+    align-items: center;
+    /* Centra verticalmente los elementos */
     background: linear-gradient(to right, rgba(12, 14, 15, 0.5), rgba(208, 114, 9, 0.5));
     height: 150px;
     padding: 15px 20px;
@@ -41,11 +47,14 @@ span{
 }
 
 .navbar .logo {
-    margin-left: 400px; /* Elimina espacio innecesario */
-    display: flex; /* Mantiene el logo en flexbox */
-    align-items: center; /* Centra verticalmente */
+    margin-left: 400px;
+    /* Elimina espacio innecesario */
+    display: flex;
+    /* Mantiene el logo en flexbox */
+    align-items: center;
+    /* Centra verticalmente */
     justify-content: center;
-    
+
 }
 
 .navbar .logo img {
@@ -58,7 +67,8 @@ span{
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center; /* Mantiene los elementos del menú alineados verticalmente */
+    align-items: center;
+    /* Mantiene los elementos del menú alineados verticalmente */
     margin-right: 550px;
 }
 
@@ -71,7 +81,8 @@ span{
     text-decoration: none;
     color: white;
     font-weight: bold;
-    white-space: nowrap; /* Evita saltos de línea en los elementos */
+    white-space: nowrap;
+    /* Evita saltos de línea en los elementos */
     transition: color 0.3s ease;
     font-size: 17px;
 }
@@ -89,7 +100,8 @@ span{
     padding: 10px;
     z-index: 1;
     border-radius: 5px;
-    min-width: 200px; /* Ancho mínimo para evitar saltos de línea */
+    min-width: 200px;
+    /* Ancho mínimo para evitar saltos de línea */
 }
 
 .navbar ul li:hover .dropdown {
@@ -147,39 +159,44 @@ span{
 
 /*Contenido*/
 /*index*/
-.presentation{
-    color: white;    
+.presentation {
+    color: white;
 }
-.presentation h1{
+
+.presentation h1 {
     justify-content: center;
     margin-top: 40px;
 }
-.content .presentation .presentation-texto h1{
+
+.content .presentation .presentation-texto h1 {
     text-align: center;
-    color:#d07209
-    
-}
-.presentation-text{
-    text-align: justify;
-    
+    color: #d07209
 }
 
-.content .presentation .presentation-texto p{
+.presentation-text {
+    text-align: justify;
+
+}
+
+.content .presentation .presentation-texto p {
     justify-content: center;
     text-align: justify;
-    
+
 }
 
 
-.content .presentation .presentation-texto p{
+.content .presentation .presentation-texto p {
     justify-content: center;
     font-size: 15x;
     text-align: left;
 
 }
+
 .presentation-texto p {
-    max-width: 60%; /* Ajusta este valor según tus necesidades */
-    margin: 0 auto; /* Centra el párrafo dentro del contenedor */
+    max-width: 60%;
+    /* Ajusta este valor según tus necesidades */
+    margin: 0 auto;
+    /* Centra el párrafo dentro del contenedor */
     letter-spacing: 2px;
 }
 
@@ -189,8 +206,10 @@ span{
 .presentation {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra horizontalmente */
-    text-align: center; /* Asegura que el texto también esté centrado */
+    align-items: center;
+    /* Centra horizontalmente */
+    text-align: center;
+    /* Asegura que el texto también esté centrado */
 }
 
 /* Estilo para centrar el botón */
@@ -204,7 +223,8 @@ span{
 /* Estilo para el botón */
 /* Añadir separación entre el texto y el botón */
 .presentation-texto {
-    margin-bottom: 20px; /* Ajusta el valor según el espacio que necesites */
+    margin-bottom: 20px;
+    /* Ajusta el valor según el espacio que necesites */
 }
 
 /* Estilo para el contenedor del botón */
@@ -218,7 +238,8 @@ span{
 .boton-contacto button {
     background-color: transparent;
     padding: 10px 20px;
-    border: 1px solid #FFA500; /* Cambiar borde a naranja */
+    border: 1px solid #FFA500;
+    /* Cambiar borde a naranja */
     cursor: pointer;
     display: inline-flex;
     align-items: center;
@@ -239,13 +260,15 @@ span{
 
 /* Flecha dentro del botón */
 .boton-contacto button a::before {
-    content: '\2192'; /* Unicode para la flecha */
+    content: '\2192';
+    /* Unicode para la flecha */
     margin-right: 10px;
 }
 
 /* Estilo al pasar el mouse */
 .boton-contacto button:hover {
-    background-color: #FFA500; /* Cambiar fondo a naranja en hover */
+    background-color: #FFA500;
+    /* Cambiar fondo a naranja en hover */
     color: #000000;
 }
 
@@ -264,12 +287,103 @@ span{
     color: white;
 }
 
+/* productos destacados */
+.productos-destacados {
+    
+    padding: 20px;
+    text-align: center;
+    background-color: transparent;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.productos-destacados h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    margin-right: 150px;
+    color: #d07209;
+    font-weight: bold;
+}
+
+.productos-destacados .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* Espacio entre los productos */
+    margin-top: 20px;
+    /* Ajusta la distancia según sea necesario */
+}
+
+.producto {
+    width: 45%;
+    text-align: left;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.producto img {
+    max-width: 100%;
+    border-radius: 5px;
+    border: 1px solid #d07209;
+}
+
+.producto h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #d07209;
+}
+
+.producto p {
+    font-size: 1em;
+    margin: 10px 0;
+    color: white;
+}
+
+.producto button {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: 2px solid #ff8c00;
+    
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.producto button::before {
+    content: '→';
+    margin-right: 10px;
+}
+
+.producto button a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.producto button:hover {
+    background-color: #ff8c00;
+    color: #ffffff;
+}
+
+.producto button:hover a {
+    color: #ffffff;
+}
+
+
+
 /*Footer*/
 
 /* Contenedor principal para empujar el footer hacia abajo */
 .content {
-    flex: 1; /* Hace que este div ocupe todo el espacio disponible entre la navbar y el footer */
-    padding: 5px; /* Opcional: Agrega un poco de padding al contenido */
+    flex: 1;
+    /* Hace que este div ocupe todo el espacio disponible entre la navbar y el footer */
+    padding: 5px;
+    /* Opcional: Agrega un poco de padding al contenido */
 }
 
 /* Footer */
@@ -280,11 +394,12 @@ span{
     padding: 15px 0;
     width: 100%;
     height: 5%;
-    
-    margin-top: auto; /* Asegura que el footer esté al final de la página */
-    
-    
-    
+
+    margin-top: auto;
+    /* Asegura que el footer esté al final de la página */
+
+
+
 }
 
 
@@ -299,36 +414,49 @@ span{
 /*PRODUCTOS INDUSTRIALES*/
 
 body.logistica-industrial .titulo-de-seccion {
-    text-align: center; /* Centra el texto horizontalmente */
-    color: #d07209; /* Cambia el color del texto a naranja */
-    font-size: 2.5rem; /* Ajusta el tamaño del texto para hacerlo más prominente */
+    text-align: center;
+    /* Centra el texto horizontalmente */
+    color: #d07209;
+    /* Cambia el color del texto a naranja */
+    font-size: 2.5rem;
+    /* Ajusta el tamaño del texto para hacerlo más prominente */
     margin-top: 20px;
 }
 
 body.logistica-industrial .carousel-image-wrapper {
-    position: relative; /* Asegura que el overlay y el texto se posicionen correctamente */
+    position: relative;
+    /* Asegura que el overlay y el texto se posicionen correctamente */
 }
 
 body.logistica-industrial .image-overlay {
-    background: rgba(5, 7, 9, 0.5); /* Color semitransparente */
-    position: absolute; /* Posiciona el overlay sobre la imagen */
+    background: rgba(5, 7, 9, 0.5);
+    /* Color semitransparente */
+    position: absolute;
+    /* Posiciona el overlay sobre la imagen */
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 1; /* Asegura que el overlay esté por encima de la imagen */
+    z-index: 1;
+    /* Asegura que el overlay esté por encima de la imagen */
 }
 
 body.logistica-industrial .carousel-caption {
-    z-index: 2; /* Asegura que el texto esté por encima del overlay */
-    position: absolute; /* Permite el uso de z-index correctamente */
-    top: 50%; /* Posiciona el texto verticalmente en el medio */
-    left: 50%; /* Posiciona el texto horizontalmente en el medio */
-    transform: translate(-50%, -50%); /* Centra el texto perfectamente */
+    z-index: 2;
+    /* Asegura que el texto esté por encima del overlay */
+    position: absolute;
+    /* Permite el uso de z-index correctamente */
+    top: 50%;
+    /* Posiciona el texto verticalmente en el medio */
+    left: 50%;
+    /* Posiciona el texto horizontalmente en el medio */
+    transform: translate(-50%, -50%);
+    /* Centra el texto perfectamente */
     width: 80%;
-    
+
 }
-.texto-informacion{
+
+.texto-informacion {
     color: white;
     width: 70%;
     height: 50%;
@@ -339,41 +467,50 @@ body.logistica-industrial .carousel-caption {
 /* Asegúrate de que el contenedor del texto tenga el mismo ancho que el carrusel */
 .texto-informacion {
     width: 100%;
-    padding: 0 15px; /* Ajusta el padding según sea necesario */
-    box-sizing: border-box; /* Asegúrate de que el padding no afecte el ancho total */
+    padding: 0 15px;
+    /* Ajusta el padding según sea necesario */
+    box-sizing: border-box;
+    /* Asegúrate de que el padding no afecte el ancho total */
 }
 
 /* Opcional: Agrega estilos para ajustar el tamaño del texto */
 .texto-informacion p {
-    font-size: 1rem; /* Ajusta el tamaño del texto según sea necesario */
-    line-height: 1.6; /* Mejora la legibilidad del texto */
+    font-size: 1rem;
+    /* Ajusta el tamaño del texto según sea necesario */
+    line-height: 1.6;
+    /* Mejora la legibilidad del texto */
 }
 
-.titulo-de-seccion{
+.titulo-de-seccion {
     font-weight: bold;
 }
 
 /*Rampa movil*/
-.clientes h2{
+.clientes h2 {
     color: #d07209;
     font-weight: bold;
     text-align: center;
     margin-top: 50px;
-    
+
 }
+
 .client-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Espacio entre los grupos de clientes */
-    justify-content: center; /* Centra los grupos de clientes horizontalmente */
+    gap: 20px;
+    /* Espacio entre los grupos de clientes */
+    justify-content: center;
+    /* Centra los grupos de clientes horizontalmente */
     margin-top: 5%;
     margin-left: 17%;
 }
 
 .client-group {
-    flex: 1 1 calc(33.333% - 20px); /* Tres clientes por fila con un espacio a la derecha */
-    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
-    
+    flex: 1 1 calc(33.333% - 20px);
+    /* Tres clientes por fila con un espacio a la derecha */
+    box-sizing: border-box;
+    /* Incluye padding y border en el cálculo del ancho */
+
 }
 
 
@@ -388,7 +525,7 @@ body.logistica-industrial .carousel-caption {
     margin-bottom: 10px;
 }
 
-.client-group li:hover{
+.client-group li:hover {
     color: #d07209;
 }
 
@@ -396,7 +533,7 @@ body.logistica-industrial .carousel-caption {
 .client-list ul {
     padding: 0;
     margin: 0;
-    
+
 }
 
 
@@ -442,11 +579,13 @@ body.contacto .facebook img {
     height: auto;
     margin: 10px;
     margin-right: 30%;
-    transition: transform 0.3s ease; /* Añade una transición suave */
+    transition: transform 0.3s ease;
+    /* Añade una transición suave */
 }
 
 body.contacto .facebook img:hover {
-    transform: scale(1.2); /* Agranda la imagen al 120% de su tamaño original */
+    transform: scale(1.2);
+    /* Agranda la imagen al 120% de su tamaño original */
 }
 
 
@@ -499,4 +638,3 @@ body.contacto button[type="submit"] {
 body.contacto button[type="submit"]:hover {
     background-color: #e67e22;
 }
-
