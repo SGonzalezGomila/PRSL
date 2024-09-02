@@ -486,56 +486,95 @@ body.logistica-industrial .carousel-caption {
 }
 
 /*Rampa movil*/
-.clientes h2 {
-    color: #d07209;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 50px;
-
-}
-
-.client-list {
+.button-wrapper{
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    /* Espacio entre los grupos de clientes */
+    flex-direction: row;
     justify-content: center;
-    /* Centra los grupos de clientes horizontalmente */
-    margin-top: 5%;
-    margin-left: 17%;
+    padding: 10px;
+    margin: 10px;
 }
-
-.client-group {
-    flex: 1 1 calc(33.333% - 20px);
-    /* Tres clientes por fila con un espacio a la derecha */
-    box-sizing: border-box;
-    /* Incluye padding y border en el cálculo del ancho */
-
+.boton-video button {
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 1px solid #FFA500;
+    /* Cambiar borde a naranja */
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: none;
+    font-weight: normal;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    margin: 10px;
 }
-
-
-.client-group ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    color: white;
-}
-
-.client-group li {
-    margin-bottom: 10px;
-}
-
-.client-group li:hover {
-    color: #d07209;
+.carousel-image-wrapper img {
+    width: 400px; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 400px; /* Ajusta la altura de acuerdo a tus necesidades */
+    object-fit: cover; /* Recorta la imagen para que cubra todo el área manteniendo su proporción */
 }
 
 
-.client-list ul {
-    padding: 0;
-    margin: 0;
 
+/* Estilo para el enlace dentro del botón */
+.boton-video button a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
 }
 
+/* Flecha dentro del botón */
+.boton-video button a::before {
+    content: '\2192';
+    /* Unicode para la flecha */
+    margin-right: 10px;
+}
+
+/* Estilo al pasar el mouse */
+.boton-video button:hover {
+    background-color: #FFA500;
+    /* Cambiar fondo a naranja en hover */
+    color: #000000;
+}
+
+.boton-mas-info button {
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 1px solid #FFA500;
+    /* Cambiar borde a naranja */
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: none;
+    font-weight: normal;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    margin: 10px;
+}
+
+/* Estilo para el enlace dentro del botón */
+.boton-mas-info button a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Flecha dentro del botón */
+.botonboton-mas-info button a::before {
+    content: '\2192';
+    /* Unicode para la flecha */
+    margin-right: 10px;
+}
+
+/* Estilo al pasar el mouse */
+.boton-mas-info button:hover {
+    background-color: #FFA500;
+    /* Cambiar fondo a naranja en hover */
+    color: #000000;
+}
 
 
 
