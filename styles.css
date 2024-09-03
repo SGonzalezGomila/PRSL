@@ -323,7 +323,8 @@ span {
 }
 
 .producto img {
-    max-width: 100%;
+    width: 500px;
+    height: 400px;
     border-radius: 5px;
     border: 1px solid #d07209;
 }
@@ -509,8 +510,8 @@ body.logistica-industrial .carousel-caption {
     margin: 10px;
 }
 .carousel-image-wrapper img {
-    width: 400px; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-    height: 400px; /* Ajusta la altura de acuerdo a tus necesidades */
+    width: 500px; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 500px; /* Ajusta la altura de acuerdo a tus necesidades */
     object-fit: cover; /* Recorta la imagen para que cubra todo el área manteniendo su proporción */
 }
 
