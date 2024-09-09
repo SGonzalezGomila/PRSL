@@ -17,6 +17,7 @@ body {
 h1 h2 h3 h4 {
     font-weight: bold;
     font-family: "Roboto Condensed", sans-serif;
+    
 }
 
 h3 h4 h5 {
@@ -24,11 +25,15 @@ h3 h4 h5 {
     font-family: "Roboto Condensed", sans-serif;
 }
 
-p,
+
 span {
     font-family: "Montserrat", sans-serif;
+    color: #d07209;
 }
 
+p{
+    color: #ffffff;
+}
 
 strong {
     color: #d07209;
@@ -597,7 +602,19 @@ body.logistica-industrial .carousel-caption {
 }
 
 
+.container-especial{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
+.container-especial img{
+    width: auto;
+    margin-left: 10px;
+    height: auto;
+    margin-bottom: 400px;
+}
 
 
 /*Contactos*/
@@ -619,32 +636,36 @@ body.contacto .form-map-wrapper {
 
 body.contacto .map-container {
     flex: 1;
-    margin-right: 20px;
     display: flex;
     flex-direction: column;
 }
 
 body.contacto .map-container iframe {
     margin-bottom: 10px;
-    margin-top: 20%;
 }
 
-body.contacto .facebook {
-    text-align: center;
+body.contacto .social-logos {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
-body.contacto .facebook img {
-    width: 100px;
+body.contacto .facebook img,
+body.contacto .whatsapp img {
+    width: 48px;
     height: auto;
     margin: 10px;
-    margin-right: 30%;
     transition: transform 0.3s ease;
-    /* Añade una transición suave */
 }
 
-body.contacto .facebook img:hover {
+body.contacto .facebook img:hover,
+body.contacto .whatsapp img:hover {
     transform: scale(1.2);
-    /* Agranda la imagen al 120% de su tamaño original */
+}
+
+body.contacto .contact-form {
+    flex: 1;
+    margin-left: 20px;
 }
 
 
@@ -656,23 +677,10 @@ body.contacto .facebook img:hover {
 
 
 
-body.contacto .telefono {
-    text-align: center;
-}
 
-body.contacto .facebook img {
-    width: 100px;
-    height: auto;
-    margin: 10px;
-    margin-right: 30%;
-    transition: transform 0.3s ease;
-    /* Añade una transición suave */
-}
 
-body.contacto .facebook img:hover {
-    transform: scale(1.2);
-    /* Agranda la imagen al 120% de su tamaño original */
-}
+
+
 
 
 
