@@ -849,7 +849,7 @@ body.contacto button[type="submit"]:hover {
         height: 90px;
         width: auto;
         position: relative;
-        left: 00px;
+        left: 200px;
 
     }
 
@@ -1105,9 +1105,9 @@ body.contacto button[type="submit"]:hover {
     }
 
     .producto img {
-        width: 700px;
-        height: auto;
-        fill: none;
+        width: 100%; /* Ajusta la imagen al ancho del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+        object-fit: cover;
     }
 
     .contact-section .form-map-wrapper {
@@ -1161,8 +1161,9 @@ body.contacto button[type="submit"]:hover {
     }
 
     .producto img {
-        width: 100%;
-        height: auto;
+        width: 100%; /* Ajusta la imagen al ancho del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+        object-fit: cover;
     }
 
     .presentation h1 {
