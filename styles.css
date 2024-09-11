@@ -1123,9 +1123,7 @@ body.contacto button[type="submit"]:hover {
         height: 100%;
         object-fit: contain; /* Ajusta la imagen para que se vea completa */
     }
-    .texto-informacion{
-        margin-bottom: 700px;
-    }
+    
 }
 
 
@@ -1199,8 +1197,6 @@ body.contacto button[type="submit"]:hover {
     .contact-section .social-logos div {
         margin: 0 10px;
     }
-    .texto-informacion{
-        margin-bottom: 700px;
-    }
+   
 }
 
