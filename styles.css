@@ -991,3 +991,156 @@ body.contacto button[type="submit"]:hover {
     }
 
 }
+
+
+/* Media queries para dispositivos móviles */
+
+@media screen and (max-width: 768px) {
+    /* Dispositivos con pantallas de hasta 768px (tabletas y móviles grandes) */
+    
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .navbar .logo {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar .logo img {
+        height: 70px;
+    }
+
+    .navbar ul {
+        margin-right: 0;
+        margin-top: 10px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .navbar ul .dropdown {
+        max-width: 100%;
+        background-color: black;
+    }
+
+    .productos-destacados .container {
+        flex-direction: column;
+    }
+
+    .producto {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .producto img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-section .form-map-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-section .map-container,
+    .contact-section .contact-form {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .contact-section iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-section .social-logos {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .contact-section .social-logos div {
+        margin: 0 10px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    /* Dispositivos con pantallas de hasta 480px (móviles pequeños) */
+    
+    .navbar .logo img {
+        height: 50px;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+    }
+
+    .productos-destacados .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .producto {
+        width: 100%;
+    }
+
+    .producto img {
+        width: 100%;
+        height: auto;
+    }
+
+    .presentation h1 {
+        font-size: 1.5em;
+    }
+
+    .presentation-texto p {
+        font-size: 14px;
+    }
+
+    .footer {
+        height: auto;
+        padding: 10px;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+   
+    .contact-section .form-map-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-section .map-container,
+    .contact-section .contact-form {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .contact-section iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-section .social-logos {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .contact-section .social-logos div {
+        margin: 0 10px;
+    }
+}
+
