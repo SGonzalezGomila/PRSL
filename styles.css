@@ -549,6 +549,60 @@ body.logistica-industrial .carousel-caption {
     object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsión */
 }
 
+/* Asegura que el carrusel y el texto se alineen correctamente en la fila */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carousel-container {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.carousel-image-wrapper img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.texto-informacion {
+    text-align: left;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.boton-video button, .boton-mas-info button {
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 1px solid #FFA500;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: none;
+    font-weight: normal;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    margin: 10px 0;
+}
+
+
+
+.carousel-container {
+    width: 400px;
+    height: 400px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
 
 /* Estilo para el enlace dentro del botón */
 .boton-video button a {
