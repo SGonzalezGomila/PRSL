@@ -76,11 +76,11 @@ span {
 }
 .navbar .logo {
     margin-left: 400px;
-    
+    /* Elimina espacio innecesario */
     display: flex;
-    position: relative;
-    left: 300px;
+    /* Mantiene el logo en flexbox */
     align-items: center;
+    /* Centra verticalmente */
     justify-content: center;
 
 }
@@ -97,8 +97,7 @@ span {
     display: flex;
     align-items: center;
     /* Mantiene los elementos del menú alineados verticalmente */
-    position: relative;
-    right: 770px
+    margin-right: 550px;
 }
 
 .navbar ul li {
@@ -823,7 +822,324 @@ body.contacto button[type="submit"]:hover {
 
 }
 
-/* Media queries para dispositivos móviles pequeños */
+/* Media querys de 19 a 20 pulgadas */
+@media screen and (min-width: 1280px) and (max-width: 1600px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(to right, rgba(12, 14, 15, 0.5), rgba(208, 114, 9, 0.5));
+        height: 150px;
+        padding: 15px 20px;
+
+    }
+
+    .navbar .logo {
+        margin-left: 400px;
+        /* Elimina espacio innecesario */
+        display: flex;
+        /* Mantiene el logo en flexbox */
+        align-items: center;
+        /* Centra verticalmente */
+        justify-content: center;
+
+    }
+
+    .navbar .logo img {
+        height: 90px;
+        width: auto;
+        position: relative;
+        left: 00px;
+
+    }
+
+    .navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        /* Mantiene los elementos del menú alineados verticalmente */
+        margin-right: 490px;
+    }
+
+    .navbar ul li {
+        position: relative;
+        margin: 0 15px;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        white-space: nowrap;
+        /* Evita saltos de línea en los elementos */
+        transition: color 0.3s ease;
+        font-size: 17px;
+    }
+
+    .navbar ul li a:hover {
+        color: orange;
+    }
+
+    .navbar ul .dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: black;
+        padding: 10px;
+        z-index: 1;
+        border-radius: 5px;
+        min-width: 200px;
+        /* Ancho mínimo para evitar saltos de línea */
+    }
+
+    .navbar ul li:hover .dropdown {
+        display: block;
+    }
+
+    .navbar ul .dropdown li {
+        margin: 5px 0;
+    }
+
+    .navbar ul .dropdown li a {
+        color: white;
+    }
+
+    .navbar ul .dropdown li a:hover {
+        color: orange;
+    }
+
+
+
+    /* Submenú dentro de Logística Industrial */
+    .navbar ul .dropdown .dropdown-submenu {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        background-color: black;
+        padding: 10px;
+        border-radius: 5px;
+        min-width: 200px;
+    }
+
+    .navbar ul .dropdown li:hover .dropdown-submenu {
+        display: block;
+    }
+
+    .navbar ul .dropdown .dropdown-submenu li {
+        margin: 5px 0;
+    }
+
+    .navbar ul .dropdown .dropdown-submenu li a {
+        color: white;
+    }
+
+    .navbar ul .dropdown .dropdown-submenu li a:hover {
+        color: orange;
+    }
+
+}
+
+/* MediaQuery de 22 a 24 pulgadas */
+@media screen and (min-width: 1680px) and (max-width: 1920px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(to right, rgba(12, 14, 15, 0.5), rgba(208, 114, 9, 0.5));
+        height: 150px;
+        padding: 15px 20px;
+
+    }
+
+    .navbar .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 400px;
+
+    }
+
+    .navbar .logo img {
+        height: 90px;
+        width: auto;
+        margin-left: 170px;
+    }
+
+    .navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        margin-right: 680px;
+    }
+
+    .navbar ul li {
+        position: relative;
+        margin: 0 15px;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        white-space: nowrap;
+        /* Evita saltos de línea en los elementos */
+        transition: color 0.3s ease;
+        font-size: 17px;
+    }
+
+    .navbar ul li a:hover {
+        color: orange;
+    }
+
+    .navbar ul .dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: black;
+        padding: 10px;
+        z-index: 1;
+        border-radius: 5px;
+        min-width: 200px;
+        /* Ancho mínimo para evitar saltos de línea */
+    }
+
+    .navbar ul li:hover .dropdown {
+        display: block;
+    }
+
+    .navbar ul .dropdown li {
+        margin: 5px 0;
+    }
+
+    .navbar ul .dropdown li a {
+        color: white;
+    }
+
+    .navbar ul .dropdown li a:hover {
+        color: orange;
+    }
+
+
+
+    /* Submenú dentro de Logística Industrial */
+    .navbar ul .dropdown .dropdown-submenu {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        background-color: black;
+        padding: 10px;
+        border-radius: 5px;
+        min-width: 200px;
+    }
+
+    .navbar ul .dropdown li:hover .dropdown-submenu {
+        display: block;
+    }
+
+    .navbar ul .dropdown .dropdown-submenu li {
+        margin: 5px 0;
+    }
+
+    .navbar ul .dropdown .dropdown-submenu li a {
+        color: white;
+    }
+
+    .navbar ul .dropdown .dropdown-submenu li a:hover {
+        color: orange;
+    }
+
+}
+
+
+/* Media queries para dispositivos móviles */
+
+@media screen and (max-width: 768px) {
+    /* Dispositivos con pantallas de hasta 768px (tabletas y móviles grandes) */
+    
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .navbar .logo {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar .logo img {
+        height: 70px;
+    }
+
+    .navbar ul {
+        margin-right: 0;
+        margin-top: 10px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .navbar ul .dropdown {
+        max-width: 100%;
+        background-color: black;
+    }
+
+    .productos-destacados .container {
+        flex-direction: column;
+    }
+
+    .producto {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .producto img {
+        width: 700px;
+        height: auto;
+        fill: none;
+    }
+
+    .contact-section .form-map-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-section .map-container,
+    .contact-section .contact-form {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .contact-section iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-section .social-logos {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .contact-section .social-logos div {
+        margin: 0 10px;
+    }
+}
+
+
 @media screen and (max-width: 480px) {
     /* Dispositivos con pantallas de hasta 480px (móviles pequeños) */
     
@@ -894,295 +1210,4 @@ body.contacto button[type="submit"]:hover {
         margin: 0 10px;
     }
 }
-
-/* Media queries para dispositivos móviles grandes y tabletas */
-@media screen and (max-width: 768px) {
-    /* Dispositivos con pantallas de hasta 768px (tabletas y móviles grandes) */
-    
-    .navbar {
-        flex-direction: column;
-        height: auto;
-        padding: 10px;
-    }
-
-    .navbar .logo {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-
-    .navbar .logo img {
-        height: 70px;
-    }
-
-    .navbar ul {
-        margin-right: 0;
-        margin-top: 10px;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .navbar ul li {
-        margin: 10px 0;
-    }
-
-    .navbar ul .dropdown {
-        max-width: 100%;
-        background-color: black;
-    }
-
-    .productos-destacados .container {
-        flex-direction: column;
-    }
-
-    .producto {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .producto img {
-        width: 100%;
-        height: auto;
-    }
-
-    .contact-section .form-map-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .contact-section .map-container,
-    .contact-section .contact-form {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .contact-section iframe {
-        width: 100%;
-        height: auto;
-    }
-
-    .contact-section .social-logos {
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-    .contact-section .social-logos div {
-        margin: 0 10px;
-    }
-}
-
-/* Media queries de 1280px a 1600px */
-@media screen and (min-width: 1280px) and (max-width: 1600px) {
-    .navbar {
-        display: flex;
-        justify-content: space-between; /* Distribuye el espacio entre el logo y los botones */
-        align-items: center;
-        background: linear-gradient(to right, rgba(12, 14, 15, 0.5), rgba(208, 114, 9, 0.5));
-        height: 150px;
-        padding: 15px 20px;
-    }
-
-    .navbar .logo {
-        display: flex;
-        align-items: center;
-      
-    }
-
-    .navbar .logo img {
-        height: 90px;
-        width: auto;
-        position: relative;
-        right: 150px;
-    }
-
-    .navbar ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        position: relative;
-        left: -500px;
-    }
-
-    .navbar ul li {
-        position: relative;
-    }
-
-    .navbar ul li a {
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-        white-space: nowrap;
-        transition: color 0.3s ease;
-        font-size: 17px;
-    }
-
-    .navbar ul li a:hover {
-        color: orange;
-    }
-
-    .navbar ul .dropdown {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: black;
-        padding: 10px;
-        z-index: 1;
-        border-radius: 5px;
-        width: 250px;
-    }
-
-    .navbar ul li:hover .dropdown {
-        display: block;
-    }
-
-    .navbar ul .dropdown li {
-        margin: 5px 0;
-    }
-
-    .navbar ul .dropdown li a {
-        color: white;
-    }
-
-    .navbar ul .dropdown li a:hover {
-        color: orange;
-    }
-
-    .navbar ul .dropdown .dropdown-submenu {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 100%;
-        background-color: black;
-        padding: 10px;
-        border-radius: 5px;
-        width: 400px;
-    }
-
-    .navbar ul .dropdown li:hover .dropdown-submenu {
-        display: block;
-    }
-
-    .navbar ul .dropdown .dropdown-submenu li {
-        margin: 5px 0;
-    }
-
-    .navbar ul .dropdown .dropdown-submenu li a {
-        color: white;
-    }
-
-    .navbar ul .dropdown .dropdown-submenu li a:hover {
-        color: orange;
-    }
-}
-
-/* Media queries de 1680px a 1921px */
-@media screen and (min-width: 1680px) and (max-width: 1930px) {
-    .navbar {
-        display: flex;
-        justify-content: center; /* Centra el contenido dentro de la navbar */
-        align-items: center;
-        background: linear-gradient(to right, rgba(12, 14, 15, 0.5), rgba(208, 114, 9, 0.5));
-        height: 150px;
-        padding: 15px 20px;
-        width: 100%; /* Asegúrate de que ocupe todo el ancho disponible */
-    }
-
-    .navbar .logo {
-        margin-right: 20px; /* Espacio entre el logo y los botones */
-    }
-
-    .navbar .logo img {
-        height: 90px;
-        width: auto;
-        position: relative;
-        left: 700px;
-    }
-
-    .navbar ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        gap: 15px;
-    }
-}
-
-    .navbar ul li {
-        position: relative;
-    }
-
-    .navbar ul li a {
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-        white-space: nowrap;
-        transition: color 0.3s ease;
-        font-size: 17px;
-    }
-
-    .navbar ul li a:hover {
-        color: orange;
-    }
-
-    .navbar ul .dropdown {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: black;
-        padding: 10px;
-        z-index: 1;
-        border-radius: 5px;
-        width: 250px;
-    }
-
-    .navbar ul li:hover .dropdown {
-        display: block;
-    }
-
-    .navbar ul .dropdown li {
-        margin: 5px 0;
-    }
-
-    .navbar ul .dropdown li a {
-        color: white;
-    }
-
-    .navbar ul .dropdown li a:hover {
-        color: orange;
-    }
-
-    .navbar ul .dropdown .dropdown-submenu {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 100%;
-        background-color: black;
-        padding: 10px;
-        border-radius: 5px;
-        min-width: 200px;
-    }
-
-    .navbar ul .dropdown li:hover .dropdown-submenu {
-        display: block;
-    }
-
-    .navbar ul .dropdown .dropdown-submenu li {
-        margin: 5px 0;
-    }
-
-    .navbar ul .dropdown .dropdown-submenu li a {
-        color: white;
-    }
-
-    .navbar ul .dropdown .dropdown-submenu li a:hover {
-        color: orange;
-    }
 
