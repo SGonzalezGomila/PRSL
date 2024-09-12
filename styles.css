@@ -17,7 +17,7 @@ body {
 h1 h2 h3 h4 {
     font-weight: bold;
     font-family: "Roboto Condensed", sans-serif;
-    
+
 }
 
 h3 h4 h5 {
@@ -31,7 +31,7 @@ span {
     color: #d07209;
 }
 
-p{
+p {
     color: #ffffff;
 }
 
@@ -39,8 +39,8 @@ strong {
     color: #d07209;
 }
 
-.rampin{
-    color:#d07209;
+.rampin {
+    color: #d07209;
     font-weight: bold;
 }
 
@@ -71,9 +71,11 @@ span {
     padding: 15px 20px;
 
 }
-.navbar a{
+
+.navbar a {
     text-transform: uppercase;
 }
+
 .navbar .logo {
     margin-left: 400px;
     /* Elimina espacio innecesario */
@@ -516,7 +518,7 @@ body.logistica-industrial .carousel-caption {
     justify-content: center;
     padding: 10px;
     margin: 10px;
-    
+
 }
 
 .boton-video button {
@@ -534,6 +536,7 @@ body.logistica-industrial .carousel-caption {
     transition: all 0.3s ease;
     margin: 10px;
 }
+
 .boton-video-drone button {
     background-color: transparent;
     padding: 10px 20px;
@@ -548,7 +551,7 @@ body.logistica-industrial .carousel-caption {
     color: #ffffff;
     transition: all 0.3s ease;
     margin: 10px;
-    
+
 }
 
 .carousel-image-wrapper img {
@@ -562,8 +565,10 @@ body.logistica-industrial .carousel-caption {
 
 .carousel-inner .carousel-item img {
     width: 100%;
-    height: 500px; /* Mantiene la proporción de la imagen */
-    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsión */
+    height: 500px;
+    /* Mantiene la proporción de la imagen */
+    object-fit: cover;
+    /* Asegura que la imagen cubra el contenedor sin distorsión */
 }
 
 /* Asegura que el carrusel y el texto se alineen correctamente en la fila */
@@ -593,7 +598,8 @@ body.logistica-industrial .carousel-caption {
     align-items: flex-start;
 }
 
-.boton-video button, .boton-mas-info button {
+.boton-video button,
+.boton-mas-info button {
     background-color: transparent;
     padding: 10px 20px;
     border: 1px solid #FFA500;
@@ -622,20 +628,22 @@ body.logistica-industrial .carousel-caption {
 }
 
 /* Estilo para el enlace dentro del botón */
-.boton-video  button a {
+.boton-video button a {
     color: inherit;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
 }
-.boton-video-drone button a{
-   
-        color: inherit;
-        text-decoration: none;
-        display: inline-flex;
-        align-items: center;
-    
+
+.boton-video-drone button a {
+
+    color: inherit;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+
 }
+
 /* Flecha dentro del botón */
 .boton-video button a::before {
     content: '\2192';
@@ -702,14 +710,14 @@ body.logistica-industrial .carousel-caption {
 }
 
 
-.container-especial{
+.container-especial {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.container-especial img{
+.container-especial img {
     width: auto;
     margin-left: 10px;
     height: auto;
@@ -819,27 +827,33 @@ body.contacto button[type="submit"] {
 body.contacto button[type="submit"]:hover {
     background-color: #e67e22;
 }
+
 .contact-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: center; /* Centra los iconos horizontalmente */
-    align-items: center; /* Centra los iconos verticalmente */
-    gap: 10px; /* Espacio entre los iconos */
+    justify-content: center;
+    /* Centra los iconos horizontalmente */
+    align-items: center;
+    /* Centra los iconos verticalmente */
+    gap: 10px;
+    /* Espacio entre los iconos */
     padding: 10px;
     margin: 30px;
 }
 
-.otros-wrapper{
+.otros-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 1px solid #ff8c00;
 }
-.otros-wrapper a{
-   text-decoration: none;
-   color: #d07209;
+
+.otros-wrapper a {
+    text-decoration: none;
+    color: #d07209;
 }
+
 .otros-wrapper {
     display: flex;
     flex-direction: column;
@@ -849,7 +863,8 @@ body.contacto button[type="submit"]:hover {
 
 .otros-wrapper h2 {
     position: relative;
-    margin: 10px 0; /* Ajusta los márgenes según tu diseño */
+    margin: 10px 0;
+    /* Ajusta los márgenes según tu diseño */
 }
 
 .otros-wrapper h2::after {
@@ -857,8 +872,10 @@ body.contacto button[type="submit"]:hover {
     position: absolute;
     width: 0;
     height: 2px;
-    background-color: #d07209; /* Cambia este color según tu diseño */
-    bottom: -5px; /* Ajusta la distancia del subrayado */
+    background-color: #d07209;
+    /* Cambia este color según tu diseño */
+    bottom: -5px;
+    /* Ajusta la distancia del subrayado */
     left: 0;
     transition: width 1s ease-in-out;
 }
@@ -869,8 +886,10 @@ body.contacto button[type="submit"]:hover {
 
 
 .contact-wrapper svg {
-    width: 100px; /* Los SVG ocuparán el 100% del contenedor */
-    height: 100%; /* Los SVG ocuparán el 100% del contenedor */
+    width: 100px;
+    /* Los SVG ocuparán el 100% del contenedor */
+    height: 100%;
+    /* Los SVG ocuparán el 100% del contenedor */
 
 }
 
@@ -1115,7 +1134,7 @@ body.contacto button[type="submit"]:hover {
 
 @media screen and (max-width: 768px) {
     /* Dispositivos con pantallas de hasta 768px (tabletas y móviles grandes) */
-    
+
     .navbar {
         flex-direction: column;
         height: auto;
@@ -1157,8 +1176,10 @@ body.contacto button[type="submit"]:hover {
     }
 
     .producto img {
-        width: 100%; /* Ajusta la imagen al ancho del contenedor */
-        height: auto; /* Mantiene la proporción de la imagen */
+        width: 100%;
+        /* Ajusta la imagen al ancho del contenedor */
+        height: auto;
+        /* Mantiene la proporción de la imagen */
         object-fit: cover;
     }
 
@@ -1189,18 +1210,20 @@ body.contacto button[type="submit"]:hover {
     .contact-section .social-logos div {
         margin: 0 10px;
     }
+
     .carousel-item img {
         width: 100%;
         height: 100%;
-        object-fit: contain; /* Ajusta la imagen para que se vea completa */
+        object-fit: contain;
+        /* Ajusta la imagen para que se vea completa */
     }
-    
+
 }
 
 
 @media screen and (max-width: 480px) {
     /* Dispositivos con pantallas de hasta 480px (móviles pequeños) */
-    
+
     .navbar .logo img {
         height: 50px;
     }
@@ -1221,7 +1244,8 @@ body.contacto button[type="submit"]:hover {
     .carousel-item img {
         width: 100%;
         height: 100%;
-        object-fit: contain; /* Ajusta la imagen para que se vea completa */
+        object-fit: contain;
+        /* Ajusta la imagen para que se vea completa */
     }
 
     .presentation h1 {
@@ -1232,6 +1256,8 @@ body.contacto button[type="submit"]:hover {
         font-size: 14px;
     }
 
+
+
     .footer {
         height: auto;
         padding: 10px;
@@ -1240,7 +1266,7 @@ body.contacto button[type="submit"]:hover {
     .footer p {
         font-size: 14px;
     }
-   
+
     .contact-section .form-map-wrapper {
         display: flex;
         flex-direction: column;
@@ -1268,42 +1294,55 @@ body.contacto button[type="submit"]:hover {
     .contact-section .social-logos div {
         margin: 0 10px;
     }
+    
+
     .carousel-inner .carousel-item img {
-        width: 100%; /* La imagen ocupará todo el ancho del contenedor */
-        height: 100%; /* La imagen ocupará todo el alto del contenedor */
-        object-fit: contain; /* Ajusta la imagen dentro del contenedor, sin recortarla */
-        object-position: center; /* Centra la imagen en el contenedor */
+        width: 100%;
+        /* La imagen ocupará todo el ancho del contenedor */
+        height: 100%;
+        /* La imagen ocupará todo el alto del contenedor */
+        object-fit: contain;
+        /* Ajusta la imagen dentro del contenedor, sin recortarla */
+       
     }
-   .texto-informacion{
+
+    .texto-informacion {
         position: relative;
         bottom: 10%;
 
-   }
+    }
 
-   .otros-wrapper h2 {
-    text-align: center;
-    margin: 10px 0; /* Ajusta el margen si es necesario */
-    width: 100%; /* Para asegurarte de que ocupe todo el ancho disponible */
-}
+    .otros-wrapper h2 {
+        text-align: center;
+        margin: 10px 0;
+        /* Ajusta el margen si es necesario */
+        width: 100%;
+        /* Para asegurarte de que ocupe todo el ancho disponible */
+    }
 
-.otros-wrapper h2 a {
-    display: inline-block;
-    text-decoration: none; /* Quita el subrayado del enlace por defecto */
-    width: 100%;
-    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
-    overflow: hidden;
+    .otros-wrapper h2 a {
+        display: inline-block;
+        text-decoration: none;
+        /* Quita el subrayado del enlace por defecto */
+        width: 100%;
+        white-space: nowrap;
+        /* Evita que el texto se rompa en varias líneas */
+        overflow: hidden;
+
+    }
+
+    .button-wrapper {
+        flex-direction: column;
+        /* Asegura que los botones estén en una columna */
+        align-items: center;
+        /* Centra los botones horizontalmente */
+    }
+
+    .button-wrapper button {
+        width: 100%;
+        /* Asegura que los botones ocupen todo el ancho del contenedor */
+    }
     
-}
-
-.button-wrapper {
-    flex-direction: column; /* Asegura que los botones estén en una columna */
-    align-items: center; /* Centra los botones horizontalmente */
-}
-
-.button-wrapper button {
-    width: 100%; /* Asegura que los botones ocupen todo el ancho del contenedor */
-}
 
 
 }
-
