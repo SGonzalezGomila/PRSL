@@ -516,6 +516,7 @@ body.logistica-industrial .carousel-caption {
     justify-content: center;
     padding: 10px;
     margin: 10px;
+    
 }
 
 .boton-video button {
@@ -532,6 +533,22 @@ body.logistica-industrial .carousel-caption {
     color: #ffffff;
     transition: all 0.3s ease;
     margin: 10px;
+}
+.boton-video-drone button {
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 1px solid #FFA500;
+    /* Cambiar borde a naranja */
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: none;
+    font-weight: normal;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    margin: 10px;
+    
 }
 
 .carousel-image-wrapper img {
@@ -605,13 +622,20 @@ body.logistica-industrial .carousel-caption {
 }
 
 /* Estilo para el enlace dentro del botón */
-.boton-video button a {
+.boton-video  button a {
     color: inherit;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
 }
-
+.boton-video-drone button a{
+   
+        color: inherit;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+    
+}
 /* Flecha dentro del botón */
 .boton-video button a::before {
     content: '\2192';
@@ -621,6 +645,19 @@ body.logistica-industrial .carousel-caption {
 
 /* Estilo al pasar el mouse */
 .boton-video button:hover {
+    background-color: #FFA500;
+    /* Cambiar fondo a naranja en hover */
+    color: #000000;
+}
+
+.boton-video-drone button a::before {
+    content: '\2192';
+    /* Unicode para la flecha */
+    margin-right: 10px;
+}
+
+/* Estilo al pasar el mouse */
+.boton-video-drone button:hover {
     background-color: #FFA500;
     /* Cambiar fondo a naranja en hover */
     color: #000000;
@@ -792,9 +829,43 @@ body.contacto button[type="submit"]:hover {
     margin: 30px;
 }
 
+.otros-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ff8c00;
+}
+.otros-wrapper a{
+   text-decoration: none;
+   color: #d07209;
+}
+.otros-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.otros-wrapper h2 {
+    position: relative;
+    margin: 10px 0; /* Ajusta los márgenes según tu diseño */
+}
 
+.otros-wrapper h2::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #d07209; /* Cambia este color según tu diseño */
+    bottom: -5px; /* Ajusta la distancia del subrayado */
+    left: 0;
+    transition: width 1s ease-in-out;
+}
 
+.otros-wrapper h2:hover::after {
+    width: 100%;
+}
 
 
 .contact-wrapper svg {
@@ -1208,5 +1279,31 @@ body.contacto button[type="submit"]:hover {
         bottom: 10%;
 
    }
+
+   .otros-wrapper h2 {
+    text-align: center;
+    margin: 10px 0; /* Ajusta el margen si es necesario */
+    width: 100%; /* Para asegurarte de que ocupe todo el ancho disponible */
+}
+
+.otros-wrapper h2 a {
+    display: inline-block;
+    text-decoration: none; /* Quita el subrayado del enlace por defecto */
+    width: 100%;
+    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+    overflow: hidden;
+    
+}
+
+.button-wrapper {
+    flex-direction: column; /* Asegura que los botones estén en una columna */
+    align-items: center; /* Centra los botones horizontalmente */
+}
+
+.button-wrapper button {
+    width: 100%; /* Asegura que los botones ocupen todo el ancho del contenedor */
+}
+
+
 }
 
