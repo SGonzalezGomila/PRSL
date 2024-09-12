@@ -830,7 +830,7 @@ body.contacto button[type="submit"]:hover {
         height: 90px;
         width: auto;
         position: relative;
-        left: 200px;
+        left: 40px;
 
     }
 
@@ -841,7 +841,7 @@ body.contacto button[type="submit"]:hover {
         display: flex;
         align-items: center;
         /* Mantiene los elementos del menú alineados verticalmente */
-        margin-right: 490px;
+        margin-right: 500px;
     }
 
     .navbar ul li {
@@ -1197,6 +1197,16 @@ body.contacto button[type="submit"]:hover {
     .contact-section .social-logos div {
         margin: 0 10px;
     }
-   
+    .carousel-inner .carousel-item img {
+        width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+        height: 100%; /* La imagen ocupará todo el alto del contenedor */
+        object-fit: contain; /* Ajusta la imagen dentro del contenedor, sin recortarla */
+        object-position: center; /* Centra la imagen en el contenedor */
+    }
+   .texto-informacion{
+        position: relative;
+        bottom: 10%;
+
+   }
 }
 
