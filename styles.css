@@ -1011,7 +1011,20 @@ body.contacto button[type="submit"]:hover {
     .navbar ul .dropdown .dropdown-submenu li a:hover {
         color: orange;
     }
-
+   
+    
+    .carousel-container {
+        width: 90%; /* Ajusta el ancho según tus necesidades */
+        height: 90%;
+        max-width: 1200px; /* Puedes definir un ancho máximo si lo deseas */
+        margin: 0 auto; /* Centra el contenedor horizontalmente */
+        position: relative;
+    }
+    
+    .carousel-inner {
+        width: 100%;
+        height: 100%; /* Asegúrate de que el contenedor de los items ajuste su altura automáticamente */
+    }
 }
 
 /* MediaQuery de 22 a 24 pulgadas */
@@ -1126,7 +1139,7 @@ body.contacto button[type="submit"]:hover {
     .navbar ul .dropdown .dropdown-submenu li a:hover {
         color: orange;
     }
-
+    
 }
 
 
