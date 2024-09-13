@@ -1,6 +1,6 @@
 <?php
 if(substr(basename($_SERVER['PHP_SELF']), 0, 11) == "imEmailForm") {
-	include '../res/x5engine.php';
+	include './x5engine.php';
 	$form = new ImForm();
 	$form->setField('Nombre', $_POST['imObjectForm_1_1'], '', false);
 	$form->setField('teléfono', $_POST['imObjectForm_1_2'], '', false);
