@@ -11,7 +11,7 @@
 
 <body class="contacto">
     <!-- Barra de navegación -->
-    <nav class="navbar">
+    <nav class="navbar NAV">
         <div class="logo">
             <a href="#"><img src="../Assets/img/logos/logoPNG.png" alt="Logo"></a>
         </div>
@@ -61,34 +61,36 @@
                 <!-- Formulario a la derecha de los logos -->
                 <div class="contact-form">
                     <h2>Contacto</h2>
-                    <form action="mailto:saggomila@gmail.com" method="POST" enctype="text/plain">
+                    <form action="../../imEmailForm.php" method="POST">
                         <div class="form-group">
                             <label for="nombre">Nombre:</label>
-                            <input type="text" id="nombre" name="nombre" required>
+                            <input type="text" id="nombre" name="imObjectForm_1_1" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label for="telefono">Teléfono:</label>
-                            <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10}">
+                            <input type="tel" id="telefono" name="imObjectForm_1_2" class="form-control" required pattern="[0-9]{10}">
                         </div>
                         <div class="form-group">
                             <label for="direccion">Dirección:</label>
-                            <input type="text" id="direccion" name="direccion" required>
+                            <input type="text" id="direccion" name="imObjectForm_1_3" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="imObjectForm_1_4" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label for="consulta">Consulta:</label>
-                            <textarea id="consulta" name="consulta" rows="4" required></textarea>
+                            <textarea id="consulta" name="imObjectForm_1_5" class="form-control" rows="4" required></textarea>
                         </div>
                         <div class="form-group">
-                            <button type="submit">Enviar</button>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
                         </div>
+                        <input type="hidden" name="imJsCheck" value="jsactive">
+                        <input type="hidden" name="imSpProt" value="">
                     </form>
                 </div>
-            </div>
-        </div>
+                
+                
     </section>
     
 
@@ -100,7 +102,7 @@
 
     <!-- Pie de página -->
     <footer class="footer">
-        <p>&copy; PERSOL. Todos los derechos reservados.</p>
+        <p>&copy; PRSL S.R.L ©. Todos los derechos reservados.</p>
     </footer>
 </body>
 

@@ -449,10 +449,6 @@ body.logistica-industrial .titulo-de-seccion {
     margin-top: 20px;
 }
 
-body.logistica-industrial .carousel-image-wrapper {
-    position: relative;
-    /* Asegura que el overlay y el texto se posicionen correctamente */
-}
 
 body.logistica-industrial .image-overlay {
     background: rgba(5, 7, 9, 0.5);
@@ -554,18 +550,17 @@ body.logistica-industrial .carousel-caption {
 
 }
 
-.carousel-image-wrapper img {
-    width: 500px;
-    /* Asegura que la imagen ocupe todo el ancho del contenedor */
-    height: 500px;
-    /* Ajusta la altura de acuerdo a tus necesidades */
-    object-fit: cover;
-    /* Recorta la imagen para que cubra todo el área manteniendo su proporción */
-}
 
 .carousel-inner .carousel-item img {
     width: 100%;
     height: 500px;
+    /* Mantiene la proporción de la imagen */
+    object-fit: cover;
+    /* Asegura que la imagen cubra el contenedor sin distorsión */
+}
+.carousel-inner .enlonador img {
+    width: 100%;
+    height: 80%;
     /* Mantiene la proporción de la imagen */
     object-fit: cover;
     /* Asegura que la imagen cubra el contenedor sin distorsión */
@@ -582,11 +577,11 @@ body.logistica-industrial .carousel-caption {
     overflow: hidden;
 }
 
-.carousel-image-wrapper img {
+/* .carousel-image-wrapper img {
     width: 100%;
     height: 500px;
     object-fit: cover;
-}
+} */
 
 .texto-informacion {
     text-align: left;
@@ -615,7 +610,7 @@ body.logistica-industrial .carousel-caption {
 }
 
 
-
+/* 
 .carousel-container {
     width: 400px;
     height: 400px;
@@ -626,7 +621,7 @@ body.logistica-industrial .carousel-caption {
     width: 100%;
     height: 100%;
 }
-
+ */
 /* Estilo para el enlace dentro del botón */
 .boton-video button a {
     color: inherit;
@@ -933,6 +928,15 @@ body.contacto button[type="submit"]:hover {
         /* Mantiene los elementos del menú alineados verticalmente */
         margin-right: 500px;
     }
+    .NAV ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        /* Mantiene los elementos del menú alineados verticalmente */
+        margin-right: 400px;
+    }
 
     .navbar ul li {
         position: relative;
@@ -1013,18 +1017,20 @@ body.contacto button[type="submit"]:hover {
     }
    
     
-    .carousel-container {
-        width: 90%; /* Ajusta el ancho según tus necesidades */
-        height: 90%;
-        max-width: 1200px; /* Puedes definir un ancho máximo si lo deseas */
-        margin: 0 auto; /* Centra el contenedor horizontalmente */
-        position: relative;
+    .carousel-image-wrapper {
+        display: flex; /* Asegura que el contenedor se ajuste al contenido */
+        justify-content: center; /* Centra la imagen horizontalmente */
+        align-items: center; /* Centra la imagen verticalmente */
+        height: auto; /* Deja que el contenedor tome la altura de la imagen */
+        width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
     }
     
-    .carousel-inner {
-        width: 100%;
-        height: 100%; /* Asegúrate de que el contenedor de los items ajuste su altura automáticamente */
+    .carousel-image-wrapper img {
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+        height: auto; /* Asegura que la imagen mantenga su proporción */
+        object-fit: cover; /* Mantiene las proporciones de la imagen dentro del contenedor */
     }
+    
 }
 
 /* MediaQuery de 22 a 24 pulgadas */
@@ -1138,6 +1144,20 @@ body.contacto button[type="submit"]:hover {
 
     .navbar ul .dropdown .dropdown-submenu li a:hover {
         color: orange;
+    }
+
+    .carousel-image-wrapper {
+        display: flex; /* Asegura que el contenedor se ajuste al contenido */
+        justify-content: center; /* Centra la imagen horizontalmente */
+        align-items: center; /* Centra la imagen verticalmente */
+        height: auto; /* Deja que el contenedor tome la altura de la imagen */
+        width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    }
+    
+    .carousel-image-wrapper img {
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+        height: auto; /* Asegura que la imagen mantenga su proporción */
+        object-fit: cover; /* Mantiene las proporciones de la imagen dentro del contenedor */
     }
     
 }
