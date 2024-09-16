@@ -1025,7 +1025,37 @@ body.contacto button[type="submit"]:hover {
         height: auto; /* Asegura que la imagen mantenga su proporción */
         object-fit: cover; /* Mantiene las proporciones de la imagen dentro del contenedor */
     }
-    
+    .especial-uno-wrap{
+        display: flex;
+        flex-direction: row;
+        max-width: 90%;
+
+    }
+    .especial-uno-wrap img{
+        max-width: 700px;
+    }
+    .especial-uno-texto{
+        position: relative;
+        bottom: 490px;
+        height: 50%;
+    }
+    .especial-dos-wrap{
+        display: flex;
+        flex-direction: row;
+        max-width: 90%;
+
+    }
+    .especial-dos-wrap img{
+        width: 50%;
+    }
+    .especial-dos-texto{
+        position: relative;
+        bottom: 400px;
+        height: auto;
+
+        
+    }
+   
 }
 
 /* MediaQuery de 22 a 24 pulgadas */
@@ -1154,6 +1184,37 @@ body.contacto button[type="submit"]:hover {
         height: auto; /* Asegura que la imagen mantenga su proporción */
         object-fit: cover; /* Mantiene las proporciones de la imagen dentro del contenedor */
     }
+    .especial-uno-wrap{
+        display: flex;
+        flex-direction: row;
+        max-width: 90%;
+
+    }
+    .especial-uno-wrap img{
+        max-width: 700px;
+    }
+    .especial-uno-texto{
+        position: relative;
+        bottom: 490px;
+        height: 50%;
+    }
+    .especial-dos-wrap{
+        display: flex;
+        flex-direction: row;
+        max-width: 90%;
+
+    }
+    .especial-dos-wrap img{
+        width: 30%;
+    }
+    .especial-dos-texto{
+        position: relative;
+        bottom: 400px;
+        height: auto;
+
+        
+    }
+   
     
 }
 
@@ -1244,6 +1305,37 @@ body.contacto button[type="submit"]:hover {
         height: 100%;
         object-fit: contain;
         /* Ajusta la imagen para que se vea completa */
+    }
+    .especial-uno-wrap{
+        display: flex;
+        flex-direction: row;
+        max-width: 90%;
+
+    }
+    .especial-uno-wrap img{
+        max-width: 80%;
+    }
+    .especial-uno-texto{
+        position: relative;
+        bottom: 490px;
+        height: 60%;
+        
+    }
+    .especial-dos-wrap{
+        display: flex;
+        flex-direction: row;
+        max-width: 90%;
+
+    }
+    .especial-dos-wrap img{
+        width: 50%;
+    }
+    .especial-dos-texto{
+        position: relative;
+        bottom: 400px;
+        height: auto;
+
+        
     }
 
 }
@@ -1371,6 +1463,35 @@ body.contacto button[type="submit"]:hover {
         /* Asegura que los botones ocupen todo el ancho del contenedor */
     }
     
+    .especial-uno-wrap{
+        display: flex;
+        flex-direction: row;
+        max-width: 90%;
 
+    }
+    .especial-uno-wrap img{
+        max-width: 100%;
+    }
+    .especial-uno-texto{
+        position: relative;
+        bottom: 50%;
+        height: 50%;
+    }
+    .especial-dos-wrap{
+        display: flex;
+        flex-direction: row;
+        max-width: 90%;
+
+    }
+    .especial-dos-wrap img{
+        width: 80%;
+    }
+    .especial-dos-texto{
+        position: relative;
+        bottom: 400px;
+        height: auto;
+
+        
+    }
 
 }
