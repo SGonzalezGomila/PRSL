@@ -1055,6 +1055,22 @@ body.contacto button[type="submit"]:hover {
 
         
     }
+    .izaje-wrap{
+        display: flex;
+        flex-direction: row;
+        max-width: 90%;
+
+    }
+    .izaje-wrap img{
+        width: 50%;
+    }
+    .izaje-texto{
+        position: relative;
+        bottom: 400px;
+        height: 300px;
+
+        
+    }
    
 }
 
@@ -1214,7 +1230,22 @@ body.contacto button[type="submit"]:hover {
 
         
     }
-   
+    .izaje-wrap{
+        display: flex;
+        flex-direction: row;
+        max-width: 90%;
+
+    }
+    .izaje-wrap img{
+        width: 50%;
+    }
+    .izaje-texto{
+        position: relative;
+        bottom: 400px;
+        height: 400px;
+
+        
+    }
     
 }
 
@@ -1334,6 +1365,23 @@ body.contacto button[type="submit"]:hover {
         position: relative;
         bottom: 400px;
         height: auto;
+
+        
+    }
+    .izaje-wrap{
+        display: flex;
+        flex-direction: row;
+        max-width: 90%;
+
+    }
+    .izaje-wrap img{
+        width: 70%;
+        height: auto;
+    }
+    .izaje-texto{
+        position: relative;
+        bottom: 400px;
+        height: 300px;
 
         
     }
@@ -1490,6 +1538,23 @@ body.contacto button[type="submit"]:hover {
         position: relative;
         bottom: 400px;
         height: auto;
+
+        
+    }
+    .izaje-wrap{
+        display: flex;
+        flex-direction: row;
+        max-width: 90%;
+
+    }
+    .izaje-wrap img{
+        width: 90%;
+        height: auto;
+    }
+    .izaje-texto{
+        position: relative;
+        bottom: 400px;
+        height: 300px;
 
         
     }
