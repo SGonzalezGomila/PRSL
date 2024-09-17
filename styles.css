@@ -1246,7 +1246,10 @@ body.contacto button[type="submit"]:hover {
 
         
     }
-    
+    .parrot-wrap img {
+        max-width: 50%; /* Cambia el tamaño de la imagen */
+        height: auto;
+    }
 }
 
 
